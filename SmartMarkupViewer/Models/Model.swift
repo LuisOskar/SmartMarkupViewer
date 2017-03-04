@@ -6,6 +6,8 @@
 //
 //
 
+import Foundation
+
 struct Document {
     
     let rawString: String
@@ -26,7 +28,7 @@ struct Section {
 
 enum Block {
     
-    case paragraph(attributedString: StyledString)
+    case paragraph(attributedString: NSAttributedString)
     case list(list: [StyledString])
     case code(language: String?, content: String)
 }
