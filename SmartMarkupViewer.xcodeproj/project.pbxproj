@@ -30,21 +30,21 @@
 		F53EB1DE1E6A620800622054 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53EB1DC1E6A620800622054 /* Main.storyboard */; };
 		F53EB1E01E6A620800622054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53EB1DF1E6A620800622054 /* Assets.xcassets */; };
 		F53EB1E31E6A620800622054 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53EB1E11E6A620800622054 /* LaunchScreen.storyboard */; };
-		F5BA89031E6ABB8E00D414E2 /* MarkupParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BA89021E6ABB8E00D414E2 /* MarkupParser.framework */; };
-		F5BA89041E6ABF8400D414E2 /* MarkupParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BA89021E6ABB8E00D414E2 /* MarkupParser.framework */; };
-		F5BA89051E6ABF8400D414E2 /* MarkupParser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5BA89021E6ABB8E00D414E2 /* MarkupParser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F547C2831E6AC6850005DCB3 /* MarkupParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F547C2821E6AC6850005DCB3 /* MarkupParser.framework */; };
+		F547C2871E6ACC350005DCB3 /* Test2.md in Sources */ = {isa = PBXBuildFile; fileRef = F547C2861E6ACC350005DCB3 /* Test2.md */; };
+		F547C2881E6ACCED0005DCB3 /* Test2.md in Resources */ = {isa = PBXBuildFile; fileRef = F547C2861E6ACC350005DCB3 /* Test2.md */; };
 		F5BA89081E6AC31F00D414E2 /* Test.md in Sources */ = {isa = PBXBuildFile; fileRef = F5BA89071E6AC31F00D414E2 /* Test.md */; };
 		F5BA89091E6AC4B500D414E2 /* Test.md in Resources */ = {isa = PBXBuildFile; fileRef = F5BA89071E6AC31F00D414E2 /* Test.md */; };
+		F5F2578D1E6AD28E0040A676 /* MarkupParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F2578C1E6AD28E0040A676 /* MarkupParser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F5BA89061E6ABF8400D414E2 /* Embed Frameworks */ = {
+		F5F257901E6AD2920040A676 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F5BA89051E6ABF8400D414E2 /* MarkupParser.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,8 +79,10 @@
 		F53EB1DF1E6A620800622054 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F53EB1E21E6A620800622054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F53EB1E41E6A620800622054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5BA89021E6ABB8E00D414E2 /* MarkupParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MarkupParser.framework; sourceTree = "<group>"; };
+		F547C2821E6AC6850005DCB3 /* MarkupParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarkupParser.framework; path = /Users/LuisOscar/Desktop/SmartMarkupViewer/SmartMarkupViewer/MarkupParser.framework; sourceTree = "<absolute>"; };
+		F547C2861E6ACC350005DCB3 /* Test2.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Test2.md; sourceTree = "<group>"; };
 		F5BA89071E6AC31F00D414E2 /* Test.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Test.md; sourceTree = "<group>"; };
+		F5F2578C1E6AD28E0040A676 /* MarkupParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarkupParser.framework; path = /Users/LuisOscar/Desktop/SmartMarkupViewer/SmartMarkupViewer/MarkupParser.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +91,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E4539F9EE2EA5BAD486D727 /* Pods_SmartMarkupViewer.framework in Frameworks */,
-				F5BA89031E6ABB8E00D414E2 /* MarkupParser.framework in Frameworks */,
-				F5BA89041E6ABF8400D414E2 /* MarkupParser.framework in Frameworks */,
+				F547C2831E6AC6850005DCB3 /* MarkupParser.framework in Frameworks */,
+				F5F2578D1E6AD28E0040A676 /* MarkupParser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +146,6 @@
 		E0F33899513BAD92AEC6BB12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F5BA89021E6ABB8E00D414E2 /* MarkupParser.framework */,
 				1485C3144961C291B7A9C88D /* Pods_SmartMarkupViewer.framework */,
 			);
 			name = Frameworks;
@@ -236,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				F5BA89071E6AC31F00D414E2 /* Test.md */,
+				F547C2861E6ACC350005DCB3 /* Test2.md */,
 				F52CA5BD1E6A9A1400E455DE /* Screens */,
 				F52CA5B61E6A8AE700E455DE /* TestData */,
 				56D9A3311E6A924800512198 /* Helpers */,
@@ -265,7 +267,7 @@
 				F53EB1D31E6A620800622054 /* Resources */,
 				54CDABAB6354D04D9A829A2D /* [CP] Embed Pods Frameworks */,
 				807B141E775460E2C5BFAF8C /* [CP] Copy Pods Resources */,
-				F5BA89061E6ABF8400D414E2 /* Embed Frameworks */,
+				F5F257901E6AD2920040A676 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F547C2881E6ACCED0005DCB3 /* Test2.md in Resources */,
 				F5BA89091E6AC4B500D414E2 /* Test.md in Resources */,
 				B29075881E6AA0B5008C2497 /* Download.storyboard in Resources */,
 				F52CA5BA1E6A95C100E455DE /* OpenFileViewController.storyboard in Resources */,
@@ -386,6 +389,7 @@
 				F52CA5BF1E6A9A6800E455DE /* ViewerViewController.swift in Sources */,
 				B29075841E6AA08B008C2497 /* DownloadViewModel.swift in Sources */,
 				B290758D1E6AA166008C2497 /* MockModel.swift in Sources */,
+				F547C2871E6ACC350005DCB3 /* Test2.md in Sources */,
 				56D9A32D1E6A889900512198 /* Model+NSAttributedString.swift in Sources */,
 				56D9A32E1E6A889900512198 /* StyledString.swift in Sources */,
 				F5BA89081E6AC31F00D414E2 /* Test.md in Sources */,

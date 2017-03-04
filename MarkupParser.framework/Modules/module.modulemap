@@ -1,3 +1,0 @@
-framework module MarkupParser {
-    header "MarkupParser-Swift.h"
-}

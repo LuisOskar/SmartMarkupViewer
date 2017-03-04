@@ -26,9 +26,8 @@ struct FakeParser {
 //        print("input text: \(text)")
         
         
-        print("A")
         
-        guard let path = Bundle.main.path(forResource: "Test", ofType: "md") else {
+        guard let path = Bundle.main.path(forResource: "Test2", ofType: "md") else {
             return nil
         }
         

@@ -29,12 +29,12 @@ final class ViewerViewController: UIViewController {
 
 extension ViewerViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return self.documentToShow?.section.subsections.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "StyledStringTableViewCell", for: indexPath) as?  StyledStringTableViewCell,
-            let section = self.documentToShow?.section
+            let section = self.documentToShow?.section.subsections[indexPath.row]
             else { return UITableViewCell() }
         cell.configure(section: section)
         return cell

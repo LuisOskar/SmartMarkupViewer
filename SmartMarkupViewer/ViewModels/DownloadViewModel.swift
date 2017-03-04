@@ -13,7 +13,7 @@ final class DownloadViewModel {
     
     func download(link string: String, callback: @escaping (_ error: String?, _ path: URL?) -> ()) {
         guard let url = URL(string: string) else { return }
-        let filename = string.components(separatedBy: "/").last ?? "test.md"
+        let filename = string.components(separatedBy: "/").last ?? "test2.md"
         let sessionConfig = URLSessionConfiguration.default
         let session = URLSession(configuration: sessionConfig)
         let request = try! URLRequest(url: url)
