@@ -81,11 +81,13 @@ class MockupData  {
         
         sectionsContainer.append(Section(title: "Section of level 1", level: 1, contents: <#T##[Block]#>, subsections: <#T##[Section]#>)
         
+         */
+
         
-        self.document = Document(rawString: "Example MetaData?", language: Language(), sections: <#T##[Section]#>)
+        self.document = Document(rawString: "Example MetaData?", language: Language(), sections: [])
         
         
-        */
+
         
     }
     

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8VZ-aE-Wh8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Frd-0b-n2R">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zid-uw-s7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="8VZ-aE-Wh8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zYJ-eL-Hh1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="k51-rw-zlS" kind="relationship" relationship="rootViewController" id="AC2-Mw-5De"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-582" y="125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ykW-EO-klk">
+            <objects>
+                <viewController id="k51-rw-zlS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vus-gR-aSe"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Go-6O-l6c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CmO-Pz-i8Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="gd7-ci-gHZ">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1zk-EN-GMR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1zk-EN-GMR" secondAttribute="trailing" id="5tn-v8-4w1"/>
+                            <constraint firstAttribute="bottom" secondItem="1zk-EN-GMR" secondAttribute="bottom" id="ZmW-2l-W6j"/>
+                            <constraint firstItem="1zk-EN-GMR" firstAttribute="top" secondItem="CmO-Pz-i8Y" secondAttribute="top" id="aiD-X6-H3H"/>
+                            <constraint firstItem="1zk-EN-GMR" firstAttribute="leading" secondItem="CmO-Pz-i8Y" secondAttribute="leading" id="q6R-oV-e2f"/>
+                            <constraint firstItem="gd7-ci-gHZ" firstAttribute="centerY" secondItem="CmO-Pz-i8Y" secondAttribute="centerY" id="qpf-d0-1mq"/>
+                            <constraint firstItem="gd7-ci-gHZ" firstAttribute="centerX" secondItem="CmO-Pz-i8Y" secondAttribute="centerX" id="umr-Fj-4Ef"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ggc-EN-Ihi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Au0-Jk-pVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="172" y="125.4872563718141"/>
+        </scene>
+    </scenes>
+</document>

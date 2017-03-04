@@ -10,6 +10,8 @@ import UIKit
 
 typealias RangedAttribute = (NSRange, [String: Any])
 
+/*
+
 extension NSAttributedString {
   convenience init(with styledString: StyledString, level: Int) {
     let mutableAttributedString = NSMutableAttributedString(string: styledString.string)
@@ -51,3 +53,5 @@ enum FontType: Int {
     }
   }
 }
+
+ */
