@@ -28,7 +28,7 @@ class OpenFileViewController: UIViewController {
 
     
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
@@ -36,13 +36,20 @@ class OpenFileViewController: UIViewController {
         
         guard let addressString = addressTextField.text, !addressString.isEmpty else {
             
+            let alert = UIAlertController(title: "Empty Address", message: "Please write a vaild URL", preferredStyle: .alert)
             
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            
+            self.show(alert, sender: self)
             
             return
         }
         
         
-        
-        
+        if let viewerVC = segue.destination as? ViewerViewController {
+            
+            
+            
+        }
     }
 }
