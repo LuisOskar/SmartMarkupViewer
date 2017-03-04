@@ -9,6 +9,8 @@
 import Foundation
 //import RxSwift
 
+/*
+
 struct StyledStringViewModel {
   let attributedString: NSAttributedString
   
@@ -20,3 +22,6 @@ struct StyledStringViewModel {
   
   // Output
 }
+
+
+*/

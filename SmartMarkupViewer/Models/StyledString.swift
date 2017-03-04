@@ -10,20 +10,22 @@ struct StyledString {
     
     let string: String
     let styles: [Style]
-}
-
-
-struct Style {
     
-    let range: Range<String.Index>
-    let type: Type
-    
-    
-    enum `Type` {
+    struct Style {
         
-        case bold
-        case strike
-        case link(url: String)
-        case image(url: String)
+        let range: Range<String.Index>
+        let type: Type
+        
+        
+        enum `Type` {
+            
+            case bold
+            case strike
+            case link(url: String)
+            case image(url: String)
+        }
     }
 }
+
+
+

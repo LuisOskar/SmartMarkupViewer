@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 
+/*
 class StyledStringView: UIView {
   
   // MARK: Configures
@@ -23,3 +24,5 @@ class StyledStringView: UIView {
     fatalError("init(coder:) has not been implemented")
   }
 }
+
+ */
