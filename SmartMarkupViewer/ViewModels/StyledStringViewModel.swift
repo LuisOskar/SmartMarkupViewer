@@ -12,9 +12,9 @@ import Foundation
 struct StyledStringViewModel {
   let attributedString: NSAttributedString
   
-  init(styledString: StyledString) {
-    
-  }
+//  init(styledString: StyledString) {
+//    
+//  }
   
   // Input
   
