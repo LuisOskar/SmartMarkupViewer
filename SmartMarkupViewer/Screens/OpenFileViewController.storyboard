@@ -31,14 +31,14 @@
                                             <action selector="loadURLButtonPressed:" destination="4C3-jh-42g" eventType="touchUpInside" id="G2G-TC-aj0"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEO-he-QBa">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEO-he-QBa">
                                         <rect key="frame" x="0.0" y="30" width="84" height="30"/>
                                         <state key="normal" title="Demo URL 1"/>
                                         <connections>
                                             <action selector="loadURLButtonPressed:" destination="4C3-jh-42g" eventType="touchUpInside" id="5pV-gE-Eqt"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXv-xD-UaP">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXv-xD-UaP">
                                         <rect key="frame" x="0.0" y="60" width="84" height="30"/>
                                         <state key="normal" title="Demo URL 1"/>
                                         <connections>
