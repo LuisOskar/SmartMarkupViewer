@@ -34,30 +34,76 @@ class OpenFileViewController: UIViewController {
     
     @IBAction func download(_ _: UIButton!) {
         
+        guard let addressString = addressTextField.text, !addressString.isEmpty else {
+            
+            let alert = UIAlertController(title: "Empty Address", message: "Please write a vaild URL", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            
+            self.present(alert, animated: true, completion: nil)
+            
+            return
+        }
+
+        
         busyView.isHidden = false
         
         viewModel.download(link: addressTextField.text ?? "", callback: { error in
-            self.busyView.isHidden = true
             
-            guard error == nil else { return }
-            
-            
-            // Show the Viewer here with the text
-            
-            let storyboard = UIStoryboard(name: "ViewerViewController", bundle: nil)
-            
-            guard let viewerVC = storyboard.instantiateInitialViewController() as? ViewerViewController else {
-                return
+            DispatchQueue.main.async {
+                
+                self.busyView.isHidden = true
+                
+                guard error == nil else {
+                    
+                    print("An error occured: \(error)")
+                    return
+                }
+                
+                print("File downloaded successfully")
+                
+                
+                
+                // Show the Viewer here with the text
+                
+                let storyboard = UIStoryboard(name: "ViewerViewController", bundle: nil)
+                
+                guard let viewerVC = storyboard.instantiateInitialViewController() as? ViewerViewController else {
+                    return
+                }
+                
+                //            viewerVC.documentToShow = viewModel.
+                
+                
+                self.present(viewerVC, animated: true, completion: nil)
             }
-            
-//            viewerVC.documentToShow = viewModel.
-            
-            
-            self.present(viewerVC, animated: true, completion: nil)
             
         })
     }
 
+    
+    @IBAction func loadURLButtonPressed(_ sender: UIButton) {
+        
+        switch sender.tag {
+        case 1:
+            //
+            addressTextField.text = ""
+            break
+        case 2:
+            //
+            addressTextField.text = ""
+            break
+        default:
+            // default swift address
+            addressTextField.text = "https://raw.githubusercontent.com/1024jp/MarkupParser/master/README.md"
+            
+        }
+        
+        
+    }
+    
+    
+    
     
     // MARK: - Navigation
     
@@ -91,7 +137,7 @@ class OpenFileViewController: UIViewController {
 //            
 //            return
 //        }
-//        
+//
 //
 //        
 //        

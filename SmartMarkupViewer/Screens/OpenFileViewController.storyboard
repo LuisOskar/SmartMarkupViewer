@@ -42,15 +42,24 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhK-aF-isX">
                                         <rect key="frame" x="0.0" y="0.0" width="84" height="30"/>
-                                        <state key="normal" title="Demo URL 1"/>
+                                        <state key="normal" title="Swift"/>
+                                        <connections>
+                                            <action selector="loadURLButtonPressed:" destination="4C3-jh-42g" eventType="touchUpInside" id="G2G-TC-aj0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEO-he-QBa">
                                         <rect key="frame" x="0.0" y="30" width="84" height="30"/>
                                         <state key="normal" title="Demo URL 1"/>
+                                        <connections>
+                                            <action selector="loadURLButtonPressed:" destination="4C3-jh-42g" eventType="touchUpInside" id="5pV-gE-Eqt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXv-xD-UaP">
                                         <rect key="frame" x="0.0" y="60" width="84" height="30"/>
                                         <state key="normal" title="Demo URL 1"/>
+                                        <connections>
+                                            <action selector="loadURLButtonPressed:" destination="4C3-jh-42g" eventType="touchUpInside" id="rbh-A8-Hy8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -61,7 +70,7 @@
                                     <action selector="download:" destination="4C3-jh-42g" eventType="touchUpInside" id="Rh1-tD-492"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://raw.githubusercontent.com/1024jp/MarkupParser/master/README.md" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zHu-gi-NMi">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="An address goes here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zHu-gi-NMi">
                                 <rect key="frame" x="20" y="318.5" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -70,7 +79,7 @@
                             <view hidden="YES" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjd-V0-gHe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ueT-KO-uZ8">
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ueT-KO-uZ8">
                                         <rect key="frame" x="169" y="315" width="37" height="37"/>
                                     </activityIndicatorView>
                                 </subviews>
@@ -105,14 +114,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iRw-Xi-9Xb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="124" y="167.76611694152925"/>
-        </scene>
-        <!--ViewerViewController-->
-        <scene sceneID="i7e-du-8kT">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ViewerViewController" id="Y2Q-kd-9un" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H8g-NL-5NA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="722" y="167"/>
         </scene>
     </scenes>
 </document>
