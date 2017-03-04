@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6E4539F9EE2EA5BAD486D727 /* Pods_SmartMarkupViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1485C3144961C291B7A9C88D /* Pods_SmartMarkupViewer.framework */; };
+		F52CA5B51E6A779900E455DE /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F52CA5B41E6A779900E455DE /* Logo.png */; };
 		F53EB1D91E6A620800622054 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53EB1D81E6A620800622054 /* AppDelegate.swift */; };
 		F53EB1DB1E6A620800622054 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53EB1DA1E6A620800622054 /* ViewController.swift */; };
 		F53EB1DE1E6A620800622054 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53EB1DC1E6A620800622054 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		0FBF32CE86DBC7890D9DDB67 /* Pods-SmartMarkupViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMarkupViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMarkupViewer/Pods-SmartMarkupViewer.release.xcconfig"; sourceTree = "<group>"; };
 		1485C3144961C291B7A9C88D /* Pods_SmartMarkupViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMarkupViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B35EB1BC795E8AD9F3F9ED /* Pods-SmartMarkupViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMarkupViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMarkupViewer/Pods-SmartMarkupViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		F52CA5B41E6A779900E455DE /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		F53EB1D51E6A620800622054 /* SmartMarkupViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMarkupViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53EB1D81E6A620800622054 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F53EB1DA1E6A620800622054 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F52CA5B21E6A76B400E455DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F52CA5B31E6A76BA00E455DE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
 		F53EB1CC1E6A620800622054 = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +94,11 @@
 		F53EB1D71E6A620800622054 /* SmartMarkupViewer */ = {
 			isa = PBXGroup;
 			children = (
+				F52CA5B31E6A76BA00E455DE /* ViewModels */,
+				F52CA5B21E6A76B400E455DE /* Models */,
 				F53EB1D81E6A620800622054 /* AppDelegate.swift */,
 				F53EB1DA1E6A620800622054 /* ViewController.swift */,
+				F52CA5B41E6A779900E455DE /* Logo.png */,
 				F53EB1DC1E6A620800622054 /* Main.storyboard */,
 				F53EB1DF1E6A620800622054 /* Assets.xcassets */,
 				F53EB1E11E6A620800622054 /* LaunchScreen.storyboard */,
@@ -154,6 +173,7 @@
 				F53EB1E31E6A620800622054 /* LaunchScreen.storyboard in Resources */,
 				F53EB1E01E6A620800622054 /* Assets.xcassets in Resources */,
 				F53EB1DE1E6A620800622054 /* Main.storyboard in Resources */,
+				F52CA5B51E6A779900E455DE /* Logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +397,7 @@
 				F53EB1E91E6A620800622054 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
