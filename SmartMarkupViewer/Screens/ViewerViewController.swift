@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MarkupParser
 
 final class ViewerViewController: UIViewController {
     
@@ -28,12 +29,12 @@ final class ViewerViewController: UIViewController {
 
 extension ViewerViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.documentToShow?.sections.count ?? 0
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "StyledStringTableViewCell", for: indexPath) as?  StyledStringTableViewCell,
-            let section = self.documentToShow?.sections[indexPath.row]
+            let section = self.documentToShow?.section
             else { return UITableViewCell() }
         cell.configure(section: section)
         return cell

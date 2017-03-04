@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import MarkupParser
 
 typealias Attribute = (name: String, value: Any)
 typealias RangedAttribute = (range: NSRange, name: String, value: Any)
 
 extension Section {
-    var attributedString: NSAttributedString? { return self.title?.attributedString(level: self.level) }
+    var attributedString: NSAttributedString? { return NSAttributedString(string: self.title?.string ?? "") }
 }
 
 extension StyledString {

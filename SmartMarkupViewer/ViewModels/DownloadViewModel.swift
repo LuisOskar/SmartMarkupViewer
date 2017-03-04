@@ -11,7 +11,7 @@ import Foundation
 final class DownloadViewModel {
     var tempLocalUrl: URL?
     
-    func download(link string: String, callback: @escaping (_ error: String?) -> ()) {
+    func download(link string: String, callback: @escaping (_ error: String?, _ path: URL?) -> ()) {
         guard let url = URL(string: string) else { return }
         let filename = string.components(separatedBy: "/").last ?? "test.md"
         let sessionConfig = URLSessionConfiguration.default
@@ -36,9 +36,9 @@ final class DownloadViewModel {
                 
                 do {
                     try FileManager.default.copyItem(at: tLocalUrl!, to: self?.tempLocalUrl ?? URL(string: "http://google.com")!)
-                    callback(nil)
+                    callback(nil, self!.tempLocalUrl!)
                 } catch (let writeError) {
-                    callback(writeError.localizedDescription)
+                    callback(writeError.localizedDescription, nil)
                 }
                 
             } else {

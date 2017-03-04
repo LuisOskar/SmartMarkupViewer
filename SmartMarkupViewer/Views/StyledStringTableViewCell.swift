@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MarkupParser
 
 final class StyledStringTableViewCell: UITableViewCell {
     // MARK: Properties

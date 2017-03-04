@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import MarkupParser
 
 struct StyledStringViewModel {
     let attributedString: NSAttributedString?

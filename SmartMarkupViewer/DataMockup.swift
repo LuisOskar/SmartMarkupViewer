@@ -56,41 +56,4 @@ import Foundation
 //    }
 //}
 
-
-
-
-class MockupData  {
     
-    
-    let document : Document
-    
-    
-    init() {
-        
-        var sectionsContainer : [Section] = [Section]()
-        
-        
-        var sectionOneBlocks : [Block] = [Block]()
-    
-        /*
-        
-        StyledString(string: "Some String", styles: <#T##[StyledString.Style]#>)
-        
-        
-        sectionOneBlocks.append(Block.paragraph(attributedString: StyledString(string: "Block 1 styled string", styles: [Style.Type]))
-        
-        sectionsContainer.append(Section(title: "Section of level 1", level: 1, contents: <#T##[Block]#>, subsections: <#T##[Section]#>)
-        
-         */
-
-        
-        
-        
-        self.document = Document(rawString: "Example MetaData?", language: Language(), sections: [])
-        
-        
-
-        
-    }
-    
-}
