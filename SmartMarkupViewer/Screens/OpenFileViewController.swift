@@ -63,6 +63,21 @@ class OpenFileViewController: UIViewController {
                 print("File downloaded successfully")
                 
                 
+                // Parsing goes here:
+                
+                
+                guard let parsedResult = FakeParser().parse() else {
+                    
+                    let alert = UIAlertController(title: "Sorry", message: "We couldn't parse this file. =(", preferredStyle: .alert)
+                    
+                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                    
+                    self.present(alert, animated: true, completion: nil)
+                    
+                    return
+                }
+                
+                
                 
                 // Show the Viewer here with the text
                 
@@ -72,7 +87,7 @@ class OpenFileViewController: UIViewController {
                     return
                 }
                 
-                viewerVC.documentToShow = FakeParser().parse()
+                viewerVC.documentToShow = parsedResult
                 
                 
                 self.present(viewerVC, animated: true, completion: nil)

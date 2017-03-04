@@ -9,7 +9,10 @@
 import Foundation
 
 struct FakeParser {
-    func parse(path: String = "") -> Document {
+    
+    // Parsing might fail, so the response is an optional
+    func parse(path: String = "") -> Document? {
+        
         return MockModel.document
     }
 }
