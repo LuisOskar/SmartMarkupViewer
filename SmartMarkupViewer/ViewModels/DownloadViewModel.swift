@@ -29,7 +29,7 @@ final class DownloadViewModel {
                 }
                 
                 do {
-                    try FileManager.default.copyItem(at: self?.tempLocalUrl ?? URL(string: "http://google.com")!, to: tLocalUrl!)
+                    try FileManager.default.copyItem(at: tLocalUrl!, to: self?.tempLocalUrl ?? URL(string: "http://google.com")!)
                     callback(nil)
                 } catch (let writeError) {
                     callback(writeError.localizedDescription)
