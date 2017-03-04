@@ -72,7 +72,7 @@ class OpenFileViewController: UIViewController {
                     return
                 }
                 
-                //            viewerVC.documentToShow = viewModel.
+                viewerVC.documentToShow = FakeParser().parse()
                 
                 
                 self.present(viewerVC, animated: true, completion: nil)
