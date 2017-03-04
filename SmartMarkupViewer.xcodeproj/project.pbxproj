@@ -13,6 +13,9 @@
 		56D9A32E1E6A889900512198 /* StyledString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9A32B1E6A889900512198 /* StyledString.swift */; };
 		56D9A3301E6A88A000512198 /* StyledStringViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9A32F1E6A88A000512198 /* StyledStringViewModel.swift */; };
 		6E4539F9EE2EA5BAD486D727 /* Pods_SmartMarkupViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1485C3144961C291B7A9C88D /* Pods_SmartMarkupViewer.framework */; };
+		B290757D1E6A93A6008C2497 /* Download.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B290757B1E6A93A6008C2497 /* Download.storyboard */; };
+		B29075801E6A95C6008C2497 /* DownloadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290757F1E6A95C6008C2497 /* DownloadController.swift */; };
+		B29075821E6A95E8008C2497 /* DownloadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29075811E6A95E8008C2497 /* DownloadViewModel.swift */; };
 		F52CA5B51E6A779900E455DE /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F52CA5B41E6A779900E455DE /* Logo.png */; };
 		F53EB1D91E6A620800622054 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53EB1D81E6A620800622054 /* AppDelegate.swift */; };
 		F53EB1DB1E6A620800622054 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53EB1DA1E6A620800622054 /* ViewController.swift */; };
@@ -29,6 +32,9 @@
 		56D9A32A1E6A889900512198 /* Model+NSAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Model+NSAttributedString.swift"; path = "Models/Model+NSAttributedString.swift"; sourceTree = "<group>"; };
 		56D9A32B1E6A889900512198 /* StyledString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyledString.swift; path = Models/StyledString.swift; sourceTree = "<group>"; };
 		56D9A32F1E6A88A000512198 /* StyledStringViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyledStringViewModel.swift; path = ViewModels/StyledStringViewModel.swift; sourceTree = "<group>"; };
+		B290757C1E6A93A6008C2497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Download.storyboard; sourceTree = "<group>"; };
+		B290757F1E6A95C6008C2497 /* DownloadController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadController.swift; path = Controller/DownloadController.swift; sourceTree = "<group>"; };
+		B29075811E6A95E8008C2497 /* DownloadViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadViewModel.swift; path = ViewModels/DownloadViewModel.swift; sourceTree = "<group>"; };
 		D2B35EB1BC795E8AD9F3F9ED /* Pods-SmartMarkupViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMarkupViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMarkupViewer/Pods-SmartMarkupViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		F52CA5B41E6A779900E455DE /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		F53EB1D51E6A620800622054 /* SmartMarkupViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMarkupViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +75,14 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		B290757E1E6A9593008C2497 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B290757F1E6A95C6008C2497 /* DownloadController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		E0F33899513BAD92AEC6BB12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				56D9A32F1E6A88A000512198 /* StyledStringViewModel.swift */,
+				B29075811E6A95E8008C2497 /* DownloadViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -119,8 +134,10 @@
 				56D9A3201E6A7F9200512198 /* Views */,
 				F52CA5B31E6A76BA00E455DE /* ViewModels */,
 				F52CA5B21E6A76B400E455DE /* Models */,
+				B290757E1E6A9593008C2497 /* Controller */,
 				F53EB1D81E6A620800622054 /* AppDelegate.swift */,
 				F53EB1DA1E6A620800622054 /* ViewController.swift */,
+				B290757B1E6A93A6008C2497 /* Download.storyboard */,
 				F52CA5B41E6A779900E455DE /* Logo.png */,
 				F53EB1DC1E6A620800622054 /* Main.storyboard */,
 				F53EB1DF1E6A620800622054 /* Assets.xcassets */,
@@ -197,6 +214,7 @@
 				F53EB1E01E6A620800622054 /* Assets.xcassets in Resources */,
 				F53EB1DE1E6A620800622054 /* Main.storyboard in Resources */,
 				F52CA5B51E6A779900E455DE /* Logo.png in Resources */,
+				B290757D1E6A93A6008C2497 /* Download.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +278,24 @@
 				56D9A32E1E6A889900512198 /* StyledString.swift in Sources */,
 				F53EB1DB1E6A620800622054 /* ViewController.swift in Sources */,
 				56D9A3221E6A7FAE00512198 /* StyledStringView.swift in Sources */,
+				B29075821E6A95E8008C2497 /* DownloadViewModel.swift in Sources */,
 				56D9A3301E6A88A000512198 /* StyledStringViewModel.swift in Sources */,
 				F53EB1D91E6A620800622054 /* AppDelegate.swift in Sources */,
+				B29075801E6A95C6008C2497 /* DownloadController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		B290757B1E6A93A6008C2497 /* Download.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B290757C1E6A93A6008C2497 /* Base */,
+			);
+			name = Download.storyboard;
+			sourceTree = "<group>";
+		};
 		F53EB1DC1E6A620800622054 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
