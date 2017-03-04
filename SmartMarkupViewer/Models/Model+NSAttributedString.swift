@@ -11,6 +11,10 @@ import UIKit
 typealias Attribute = (name: String, value: Any)
 typealias RangedAttribute = (range: NSRange, name: String, value: Any)
 
+extension Section {
+  var attributedString: NSAttributedString? { return self.title?.attributedString(level: self.level) }
+}
+
 extension StyledString {
   fileprivate var ranges: [NSRange] {
     return self.styles.map { $0.range }.map(self.string.nsRange)
