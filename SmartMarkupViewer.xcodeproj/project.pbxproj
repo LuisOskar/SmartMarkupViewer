@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56D9A31A1E6A79AA00512198 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9A3181E6A79AA00512198 /* Model.swift */; };
+		56D9A31B1E6A79AA00512198 /* StyledString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9A3191E6A79AA00512198 /* StyledString.swift */; };
+		56D9A31D1E6A79F400512198 /* Model+NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9A31C1E6A79F400512198 /* Model+NSAttributedString.swift */; };
+		56D9A3221E6A7FAE00512198 /* StyledStringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9A3211E6A7FAE00512198 /* StyledStringView.swift */; };
+		56D9A3241E6A810500512198 /* StyledStringViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9A3231E6A810500512198 /* StyledStringViewModel.swift */; };
 		6E4539F9EE2EA5BAD486D727 /* Pods_SmartMarkupViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1485C3144961C291B7A9C88D /* Pods_SmartMarkupViewer.framework */; };
 		F52CA5B51E6A779900E455DE /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F52CA5B41E6A779900E455DE /* Logo.png */; };
 		F53EB1D91E6A620800622054 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53EB1D81E6A620800622054 /* AppDelegate.swift */; };
@@ -19,6 +24,11 @@
 /* Begin PBXFileReference section */
 		0FBF32CE86DBC7890D9DDB67 /* Pods-SmartMarkupViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMarkupViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMarkupViewer/Pods-SmartMarkupViewer.release.xcconfig"; sourceTree = "<group>"; };
 		1485C3144961C291B7A9C88D /* Pods_SmartMarkupViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMarkupViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D9A3181E6A79AA00512198 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = ../../MarkupParser/Sources/Model.swift; sourceTree = "<group>"; };
+		56D9A3191E6A79AA00512198 /* StyledString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyledString.swift; path = ../../MarkupParser/Sources/StyledString.swift; sourceTree = "<group>"; };
+		56D9A31C1E6A79F400512198 /* Model+NSAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Model+NSAttributedString.swift"; path = "Model/Model+NSAttributedString.swift"; sourceTree = "<group>"; };
+		56D9A3211E6A7FAE00512198 /* StyledStringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyledStringView.swift; path = Views/StyledStringView.swift; sourceTree = "<group>"; };
+		56D9A3231E6A810500512198 /* StyledStringViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyledStringViewModel.swift; path = Viewm/StyledStringViewModel.swift; sourceTree = "<group>"; };
 		D2B35EB1BC795E8AD9F3F9ED /* Pods-SmartMarkupViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMarkupViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMarkupViewer/Pods-SmartMarkupViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		F52CA5B41E6A779900E455DE /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		F53EB1D51E6A620800622054 /* SmartMarkupViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMarkupViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +61,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		56D9A3201E6A7F9200512198 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				56D9A3211E6A7FAE00512198 /* StyledStringView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		E0F33899513BAD92AEC6BB12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +80,9 @@
 		F52CA5B21E6A76B400E455DE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				56D9A3181E6A79AA00512198 /* Model.swift */,
+				56D9A3191E6A79AA00512198 /* StyledString.swift */,
+				56D9A31C1E6A79F400512198 /* Model+NSAttributedString.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -69,6 +90,7 @@
 		F52CA5B31E6A76BA00E455DE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				56D9A3231E6A810500512198 /* StyledStringViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -94,6 +116,7 @@
 		F53EB1D71E6A620800622054 /* SmartMarkupViewer */ = {
 			isa = PBXGroup;
 			children = (
+				56D9A3201E6A7F9200512198 /* Views */,
 				F52CA5B31E6A76BA00E455DE /* ViewModels */,
 				F52CA5B21E6A76B400E455DE /* Models */,
 				F53EB1D81E6A620800622054 /* AppDelegate.swift */,
@@ -232,7 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D9A31A1E6A79AA00512198 /* Model.swift in Sources */,
+				56D9A31B1E6A79AA00512198 /* StyledString.swift in Sources */,
+				56D9A31D1E6A79F400512198 /* Model+NSAttributedString.swift in Sources */,
+				56D9A3241E6A810500512198 /* StyledStringViewModel.swift in Sources */,
 				F53EB1DB1E6A620800622054 /* ViewController.swift in Sources */,
+				56D9A3221E6A7FAE00512198 /* StyledStringView.swift in Sources */,
 				F53EB1D91E6A620800622054 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
