@@ -14,6 +14,9 @@
 		56D9A3301E6A88A000512198 /* StyledStringViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9A32F1E6A88A000512198 /* StyledStringViewModel.swift */; };
 		56D9A3331E6A925F00512198 /* String+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9A3321E6A925F00512198 /* String+Range.swift */; };
 		6E4539F9EE2EA5BAD486D727 /* Pods_SmartMarkupViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1485C3144961C291B7A9C88D /* Pods_SmartMarkupViewer.framework */; };
+		B29075841E6AA08B008C2497 /* DownloadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29075831E6AA08B008C2497 /* DownloadViewModel.swift */; };
+		B29075881E6AA0B5008C2497 /* Download.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29075861E6AA0B5008C2497 /* Download.storyboard */; };
+		B290758A1E6AA0CB008C2497 /* DownloadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29075891E6AA0CB008C2497 /* DownloadController.swift */; };
 		F52CA5B51E6A779900E455DE /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F52CA5B41E6A779900E455DE /* Logo.png */; };
 		F52CA5B81E6A8B0C00E455DE /* DataMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CA5B71E6A8B0C00E455DE /* DataMockup.swift */; };
 		F52CA5BA1E6A95C100E455DE /* OpenFileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52CA5B91E6A95C100E455DE /* OpenFileViewController.storyboard */; };
@@ -36,6 +39,9 @@
 		56D9A32B1E6A889900512198 /* StyledString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyledString.swift; path = Models/StyledString.swift; sourceTree = "<group>"; };
 		56D9A32F1E6A88A000512198 /* StyledStringViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyledStringViewModel.swift; path = ViewModels/StyledStringViewModel.swift; sourceTree = "<group>"; };
 		56D9A3321E6A925F00512198 /* String+Range.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Range.swift"; path = "Helpers/String+Range.swift"; sourceTree = "<group>"; };
+		B29075831E6AA08B008C2497 /* DownloadViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadViewModel.swift; path = ViewModels/DownloadViewModel.swift; sourceTree = "<group>"; };
+		B29075871E6AA0B5008C2497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Download.storyboard; sourceTree = "<group>"; };
+		B29075891E6AA0CB008C2497 /* DownloadController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadController.swift; path = Controller/DownloadController.swift; sourceTree = "<group>"; };
 		D2B35EB1BC795E8AD9F3F9ED /* Pods-SmartMarkupViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMarkupViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMarkupViewer/Pods-SmartMarkupViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		F52CA5B41E6A779900E455DE /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		F52CA5B71E6A8B0C00E455DE /* DataMockup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataMockup.swift; sourceTree = "<group>"; };
@@ -89,6 +95,15 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		B29075851E6AA0A5008C2497 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				B29075891E6AA0CB008C2497 /* DownloadController.swift */,
+				B29075861E6AA0B5008C2497 /* Download.storyboard */,
+			);
+			name = Download;
+			sourceTree = "<group>";
+		};
 		E0F33899513BAD92AEC6BB12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +125,7 @@
 		F52CA5B31E6A76BA00E455DE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B29075831E6AA08B008C2497 /* DownloadViewModel.swift */,
 				56D9A32F1E6A88A000512198 /* StyledStringViewModel.swift */,
 			);
 			name = ViewModels;
@@ -126,6 +142,7 @@
 		F52CA5BD1E6A9A1400E455DE /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B29075851E6AA0A5008C2497 /* Download */,
 				F52CA5C11E6A9B3500E455DE /* Main */,
 				F52CA5C21E6A9B3B00E455DE /* Open */,
 				F52CA5C01E6A9B3000E455DE /* Viewer */,
@@ -259,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29075881E6AA0B5008C2497 /* Download.storyboard in Resources */,
 				F52CA5BA1E6A95C100E455DE /* OpenFileViewController.storyboard in Resources */,
 				F53EB1E31E6A620800622054 /* LaunchScreen.storyboard in Resources */,
 				F53EB1E01E6A620800622054 /* Assets.xcassets in Resources */,
@@ -325,10 +343,12 @@
 			files = (
 				F52CA5C41E6A9C3500E455DE /* OpenFileViewController.swift in Sources */,
 				F52CA5BF1E6A9A6800E455DE /* ViewerViewController.swift in Sources */,
+				B29075841E6AA08B008C2497 /* DownloadViewModel.swift in Sources */,
 				56D9A32C1E6A889900512198 /* Model.swift in Sources */,
 				56D9A32D1E6A889900512198 /* Model+NSAttributedString.swift in Sources */,
 				56D9A32E1E6A889900512198 /* StyledString.swift in Sources */,
 				F53EB1DB1E6A620800622054 /* ViewController.swift in Sources */,
+				B290758A1E6AA0CB008C2497 /* DownloadController.swift in Sources */,
 				F52CA5B81E6A8B0C00E455DE /* DataMockup.swift in Sources */,
 				56D9A3331E6A925F00512198 /* String+Range.swift in Sources */,
 				56D9A3221E6A7FAE00512198 /* StyledStringView.swift in Sources */,
@@ -340,6 +360,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		B29075861E6AA0B5008C2497 /* Download.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B29075871E6AA0B5008C2497 /* Base */,
+			);
+			name = Download.storyboard;
+			sourceTree = "<group>";
+		};
 		F53EB1DC1E6A620800622054 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

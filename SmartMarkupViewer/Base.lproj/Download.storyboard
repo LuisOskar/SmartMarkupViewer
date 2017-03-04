@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tp7-TV-wkN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Download Controller-->
+        <scene sceneID="7OU-0C-A5V">
+            <objects>
+                <viewController id="tp7-TV-wkN" customClass="DownloadController" customModule="SmartMarkupViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dcd-dv-aXX"/>
+                        <viewControllerLayoutGuide type="bottom" id="XBB-4g-n2a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cul-Dc-Gzq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://raw.githubusercontent.com/1024jp/MarkupParser/master/README.md" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="We6-aJ-7Xn">
+                                <rect key="frame" x="16" y="50" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVh-Yj-f3f">
+                                <rect key="frame" x="160.5" y="88" width="53" height="30"/>
+                                <state key="normal" title="Get File"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YVh-Yj-f3f" firstAttribute="top" secondItem="We6-aJ-7Xn" secondAttribute="bottom" constant="8" id="1Xw-s7-TsX"/>
+                            <constraint firstItem="We6-aJ-7Xn" firstAttribute="top" secondItem="Dcd-dv-aXX" secondAttribute="bottom" constant="30" id="P77-J4-UG6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="We6-aJ-7Xn" secondAttribute="trailing" id="S7P-fZ-b7J"/>
+                            <constraint firstItem="We6-aJ-7Xn" firstAttribute="leading" secondItem="cul-Dc-Gzq" secondAttribute="leadingMargin" id="kaU-Cp-SVY"/>
+                            <constraint firstItem="YVh-Yj-f3f" firstAttribute="centerX" secondItem="cul-Dc-Gzq" secondAttribute="centerX" id="tfK-dZ-AkU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NEK-rm-egQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="425" y="171"/>
+        </scene>
+    </scenes>
+</document>
