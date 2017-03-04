@@ -13,14 +13,20 @@ final class DownloadViewModel {
     
     func download(link string: String, callback: @escaping (_ error: String?) -> ()) {
         guard let url = URL(string: string) else { return }
+        let filename = string.components(separatedBy: "/").last ?? "test.md"
         let sessionConfig = URLSessionConfiguration.default
         let session = URLSession(configuration: sessionConfig)
         let request = try! URLRequest(url: url)
         
+        var filePath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        filePath = (filePath as NSString).strings(byAppendingPaths: [filename]).first!
+        tempLocalUrl = NSURL.fileURL(withPath: filePath)
+        
+        if FileManager.default.fileExists(atPath: filePath) {
+            try? FileManager.default.removeItem(atPath: filePath)
+        }
+        
         let task = session.downloadTask(with: request) { [weak self] (tLocalUrl, response, error) in
-            var filePath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
-            filePath = (filePath as NSString).strings(byAppendingPaths: ["test.md"]).first!
-            self?.tempLocalUrl = NSURL.fileURL(withPath: filePath)
             
             if error == nil {
                 // Success
