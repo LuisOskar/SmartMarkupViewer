@@ -1,6 +1,6 @@
 //
 //  StyledString.swift
-//  
+//
 //
 //  Created by 1024jp on 2017/03/04.
 //
@@ -24,8 +24,6 @@ struct StyledString {
             case link(url: String)
             case image(url: String)
         }
+        
     }
 }
-
-
-

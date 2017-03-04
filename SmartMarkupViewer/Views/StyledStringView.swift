@@ -13,11 +13,14 @@ import SnapKit
 class StyledStringView: UIView {
   
   // MARK: Configures
-  private func configure(styledString: StyledStringViewModel) {}
+  private func configure(viewModel: StyledStringViewModel) {
+    
+  }
   
   // MARK: Initializer
   required init(viewModel: StyledStringViewModel) {
     super.init(frame: .zero)
+    self.configure(viewModel: viewModel)
   }
   
   required init?(coder aDecoder: NSCoder) {
