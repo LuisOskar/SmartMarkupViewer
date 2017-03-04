@@ -7,21 +7,11 @@
 //
 
 import Foundation
-//import RxSwift
-
-/*
 
 struct StyledStringViewModel {
-  let attributedString: NSAttributedString
-  
-//  init(styledString: StyledString) {
-//    
-//  }
-  
-  // Input
-  
-  // Output
+    let attributedString: NSAttributedString?
+    
+    init(section: Section) {
+        self.attributedString = section.attributedString
+    }
 }
-
-
-*/
