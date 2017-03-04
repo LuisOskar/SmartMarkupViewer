@@ -92,7 +92,9 @@ class OpenFileViewController: UIViewController {
                 viewerVC.documentToShow = parsedResult
                 
                 
-                self.present(viewerVC, animated: true, completion: nil)
+                self.show(viewerVC, sender: self)
+                
+//                self.present(viewerVC, animated: true, completion: nil)
             }
             
         })
@@ -108,7 +110,7 @@ class OpenFileViewController: UIViewController {
             break
         case 2:
             //
-            addressTextField.text = "https://github.com/ReactiveX/RxSwift"
+            addressTextField.text = "https://github.com/ReactiveX/RxSwift/blob/master/README.md"
             break
         default:
             // default swift address
