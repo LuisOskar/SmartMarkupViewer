@@ -70,6 +70,8 @@ final class StyledStringTableViewCell: UITableViewCell {
         
         self.contentView.setContentCompressionResistancePriority(UILayoutPriorityRequired, for: .vertical)
         self.contentView.setContentHuggingPriority(UILayoutPriorityRequired, for: .vertical)
+        
+        self.configureLayout()
     }
     
     required init?(coder aDecoder: NSCoder) {
