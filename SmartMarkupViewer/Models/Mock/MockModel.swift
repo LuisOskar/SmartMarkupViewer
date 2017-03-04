@@ -9,7 +9,7 @@
 import Foundation
 
 struct MockModel {
-    let document = Document(rawString: "",
+    static let document = Document(rawString: "",
                             language: Language(),
                             sections: [
                                 Section(title: StyledString(string: "Big Title",
