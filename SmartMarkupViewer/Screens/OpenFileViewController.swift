@@ -1,5 +1,5 @@
 //
-//  ViewerViewController.swift
+//  OpenFileViewController.swift
 //  SmartMarkupViewer
 //
 //  Created by Luis Oscar Peredo on 3/4/17.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ViewerViewController: UIViewController {
-    
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
-    @IBOutlet weak var tableView: UITableView!
+class OpenFileViewController: UIViewController {
 
+    
+    @IBOutlet weak var addressTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,14 +26,23 @@ class ViewerViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        guard let addressString = addressTextField.text, !addressString.isEmpty else {
+            
+            
+            
+            return
+        }
+        
+        
+        
+        
     }
-    */
-
 }

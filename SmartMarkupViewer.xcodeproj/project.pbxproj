@@ -19,6 +19,7 @@
 		F52CA5BA1E6A95C100E455DE /* OpenFileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52CA5B91E6A95C100E455DE /* OpenFileViewController.storyboard */; };
 		F52CA5BC1E6A966600E455DE /* ViewerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52CA5BB1E6A966600E455DE /* ViewerViewController.storyboard */; };
 		F52CA5BF1E6A9A6800E455DE /* ViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CA5BE1E6A9A6800E455DE /* ViewerViewController.swift */; };
+		F52CA5C41E6A9C3500E455DE /* OpenFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CA5C31E6A9C3500E455DE /* OpenFileViewController.swift */; };
 		F53EB1D91E6A620800622054 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53EB1D81E6A620800622054 /* AppDelegate.swift */; };
 		F53EB1DB1E6A620800622054 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53EB1DA1E6A620800622054 /* ViewController.swift */; };
 		F53EB1DE1E6A620800622054 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53EB1DC1E6A620800622054 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		F52CA5B91E6A95C100E455DE /* OpenFileViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = OpenFileViewController.storyboard; path = Screens/OpenFileViewController.storyboard; sourceTree = "<group>"; };
 		F52CA5BB1E6A966600E455DE /* ViewerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ViewerViewController.storyboard; path = Screens/ViewerViewController.storyboard; sourceTree = "<group>"; };
 		F52CA5BE1E6A9A6800E455DE /* ViewerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewerViewController.swift; path = Screens/ViewerViewController.swift; sourceTree = "<group>"; };
+		F52CA5C31E6A9C3500E455DE /* OpenFileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenFileViewController.swift; path = Screens/OpenFileViewController.swift; sourceTree = "<group>"; };
 		F53EB1D51E6A620800622054 /* SmartMarkupViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMarkupViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53EB1D81E6A620800622054 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F53EB1DA1E6A620800622054 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				F52CA5B91E6A95C100E455DE /* OpenFileViewController.storyboard */,
+				F52CA5C31E6A9C3500E455DE /* OpenFileViewController.swift */,
 			);
 			name = Open;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52CA5C41E6A9C3500E455DE /* OpenFileViewController.swift in Sources */,
 				F52CA5BF1E6A9A6800E455DE /* ViewerViewController.swift in Sources */,
 				56D9A32C1E6A889900512198 /* Model.swift in Sources */,
 				56D9A32D1E6A889900512198 /* Model+NSAttributedString.swift in Sources */,

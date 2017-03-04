@@ -12,7 +12,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Frd-0b-n2R">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zid-uw-s7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="8VZ-aE-Wh8" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zYJ-eL-Hh1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -22,13 +21,14 @@
                         <segue destination="k51-rw-zlS" kind="relationship" relationship="rootViewController" id="AC2-Mw-5De"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zid-uw-s7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-582" y="125"/>
         </scene>
-        <!--View Controller-->
+        <!--Viewer View Controller-->
         <scene sceneID="ykW-EO-klk">
             <objects>
-                <viewController id="k51-rw-zlS" sceneMemberID="viewController">
+                <viewController id="k51-rw-zlS" customClass="ViewerViewController" customModule="SmartMarkupViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vus-gR-aSe"/>
                         <viewControllerLayoutGuide type="bottom" id="1Go-6O-l6c"/>
@@ -57,6 +57,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ggc-EN-Ihi"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="gd7-ci-gHZ" id="iqE-Cw-RUh"/>
+                        <outlet property="tableView" destination="1zk-EN-GMR" id="AYx-Co-qxy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Au0-Jk-pVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
