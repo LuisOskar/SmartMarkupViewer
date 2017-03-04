@@ -24,13 +24,6 @@ final class ViewerViewController: UIViewController {
             self.tableView?.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: 0.01)) // It's a trick to remove seporator when data doesn't exist.
         }
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-//        // For Mocking
-//        self.documentToShow = MockModel().document
-    }
 }
 
 extension ViewerViewController: UITableViewDataSource, UITableViewDelegate {
