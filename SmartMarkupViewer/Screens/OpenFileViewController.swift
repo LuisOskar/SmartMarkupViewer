@@ -59,6 +59,13 @@ class OpenFileViewController: UIViewController {
                 guard error == nil else {
                     
                     print("An error occured: \(error)")
+                    
+                    let alert = UIAlertController(title: "Sorry", message: "An error occured while downloading the file.", preferredStyle: .alert)
+                    
+                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                    
+                    self.present(alert, animated: true, completion: nil)
+                    
                     return
                 }
                 
@@ -70,7 +77,7 @@ class OpenFileViewController: UIViewController {
                 
                 guard let parsedResult = FakeParser().parse() else {
                     
-                    let alert = UIAlertController(title: "Sorry", message: "We couldn't parse this file. =(", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Sorry", message: "We couldn't parse this file.", preferredStyle: .alert)
                     
                     alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                     

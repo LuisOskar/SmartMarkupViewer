@@ -22,25 +22,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pr6-7s-kZW">
-                                <rect key="frame" x="145" y="138.5" width="84" height="90"/>
+                                <rect key="frame" x="97" y="138.5" width="180" height="90"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhK-aF-isX">
-                                        <rect key="frame" x="0.0" y="0.0" width="84" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="30"/>
                                         <state key="normal" title="Swift"/>
                                         <connections>
                                             <action selector="loadURLButtonPressed:" destination="4C3-jh-42g" eventType="touchUpInside" id="G2G-TC-aj0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEO-he-QBa">
-                                        <rect key="frame" x="0.0" y="30" width="84" height="30"/>
-                                        <state key="normal" title="Demo URL 1"/>
+                                        <rect key="frame" x="0.0" y="30" width="180" height="30"/>
+                                        <state key="normal" title="Wrong Address (intended)"/>
                                         <connections>
                                             <action selector="loadURLButtonPressed:" destination="4C3-jh-42g" eventType="touchUpInside" id="5pV-gE-Eqt"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXv-xD-UaP">
-                                        <rect key="frame" x="0.0" y="60" width="84" height="30"/>
-                                        <state key="normal" title="Demo URL 1"/>
+                                        <rect key="frame" x="0.0" y="60" width="180" height="30"/>
+                                        <state key="normal" title="RxSwift"/>
                                         <connections>
                                             <action selector="loadURLButtonPressed:" destination="4C3-jh-42g" eventType="touchUpInside" id="rbh-A8-Hy8"/>
                                         </connections>
@@ -67,7 +67,7 @@
                                         <rect key="frame" x="169" y="315" width="37" height="37"/>
                                     </activityIndicatorView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="ueT-KO-uZ8" firstAttribute="centerY" secondItem="wjd-V0-gHe" secondAttribute="centerY" id="0FO-cF-Tk4"/>
                                     <constraint firstItem="ueT-KO-uZ8" firstAttribute="centerX" secondItem="wjd-V0-gHe" secondAttribute="centerX" id="tlN-tl-A8D"/>

@@ -68,9 +68,10 @@
         <scene sceneID="rzO-Io-RD0">
             <objects>
                 <navigationController id="4q3-Vn-sCL" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yy0-Ij-ycn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Yy0-Ij-ycn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Dbp-Wl-6WT"/>
