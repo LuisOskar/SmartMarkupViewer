@@ -18,6 +18,7 @@
 		B29075841E6AA08B008C2497 /* DownloadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29075831E6AA08B008C2497 /* DownloadViewModel.swift */; };
 		B29075881E6AA0B5008C2497 /* Download.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29075861E6AA0B5008C2497 /* Download.storyboard */; };
 		B290758A1E6AA0CB008C2497 /* DownloadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29075891E6AA0CB008C2497 /* DownloadController.swift */; };
+		B290758D1E6AA166008C2497 /* MockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290758C1E6AA166008C2497 /* MockModel.swift */; };
 		F52CA5B51E6A779900E455DE /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F52CA5B41E6A779900E455DE /* Logo.png */; };
 		F52CA5B81E6A8B0C00E455DE /* DataMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CA5B71E6A8B0C00E455DE /* DataMockup.swift */; };
 		F52CA5BA1E6A95C100E455DE /* OpenFileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52CA5B91E6A95C100E455DE /* OpenFileViewController.storyboard */; };
@@ -44,6 +45,7 @@
 		B29075831E6AA08B008C2497 /* DownloadViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadViewModel.swift; path = ViewModels/DownloadViewModel.swift; sourceTree = "<group>"; };
 		B29075871E6AA0B5008C2497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Download.storyboard; sourceTree = "<group>"; };
 		B29075891E6AA0CB008C2497 /* DownloadController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadController.swift; path = Controller/DownloadController.swift; sourceTree = "<group>"; };
+		B290758C1E6AA166008C2497 /* MockModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockModel.swift; path = Models/Mock/MockModel.swift; sourceTree = "<group>"; };
 		D2B35EB1BC795E8AD9F3F9ED /* Pods-SmartMarkupViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMarkupViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMarkupViewer/Pods-SmartMarkupViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		F52CA5B41E6A779900E455DE /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		F52CA5B71E6A8B0C00E455DE /* DataMockup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataMockup.swift; sourceTree = "<group>"; };
@@ -107,6 +109,14 @@
 			name = Download;
 			sourceTree = "<group>";
 		};
+		B290758B1E6AA153008C2497 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				B290758C1E6AA166008C2497 /* MockModel.swift */,
+			);
+			name = Mock;
+			sourceTree = "<group>";
+		};
 		E0F33899513BAD92AEC6BB12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +128,7 @@
 		F52CA5B21E6A76B400E455DE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B290758B1E6AA153008C2497 /* Mock */,
 				56D9A3291E6A889900512198 /* Model.swift */,
 				56D9A32A1E6A889900512198 /* Model+NSAttributedString.swift */,
 				56D9A32B1E6A889900512198 /* StyledString.swift */,
@@ -347,6 +358,7 @@
 				F52CA5C41E6A9C3500E455DE /* OpenFileViewController.swift in Sources */,
 				F52CA5BF1E6A9A6800E455DE /* ViewerViewController.swift in Sources */,
 				B29075841E6AA08B008C2497 /* DownloadViewModel.swift in Sources */,
+				B290758D1E6AA166008C2497 /* MockModel.swift in Sources */,
 				56D9A32C1E6A889900512198 /* Model.swift in Sources */,
 				56D9A32D1E6A889900512198 /* Model+NSAttributedString.swift in Sources */,
 				56D9A32E1E6A889900512198 /* StyledString.swift in Sources */,

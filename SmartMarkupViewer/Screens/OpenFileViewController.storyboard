@@ -58,40 +58,58 @@
                                 <rect key="frame" x="168" y="388.5" width="38" height="30"/>
                                 <state key="normal" title="Open"/>
                                 <connections>
-                                    <segue destination="Y2Q-kd-9un" kind="show" id="FNp-LP-HMq"/>
+                                    <action selector="download:" destination="4C3-jh-42g" eventType="touchUpInside" id="Rh1-tD-492"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zHu-gi-NMi">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://raw.githubusercontent.com/1024jp/MarkupParser/master/README.md" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zHu-gi-NMi">
                                 <rect key="frame" x="20" y="318.5" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <view hidden="YES" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjd-V0-gHe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ueT-KO-uZ8">
+                                        <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ueT-KO-uZ8" firstAttribute="centerY" secondItem="wjd-V0-gHe" secondAttribute="centerY" id="0FO-cF-Tk4"/>
+                                    <constraint firstItem="ueT-KO-uZ8" firstAttribute="centerX" secondItem="wjd-V0-gHe" secondAttribute="centerX" id="tlN-tl-A8D"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="zHu-gi-NMi" secondAttribute="trailing" constant="20" id="1i6-uM-s9m"/>
                             <constraint firstItem="pr6-7s-kZW" firstAttribute="centerX" secondItem="IWD-s7-rDf" secondAttribute="centerX" id="Fdu-H9-jtb"/>
                             <constraint firstItem="SAt-Qy-664" firstAttribute="centerX" secondItem="IWD-s7-rDf" secondAttribute="centerX" id="Fso-O1-JXv"/>
+                            <constraint firstAttribute="trailing" secondItem="wjd-V0-gHe" secondAttribute="trailing" id="HT7-nJ-nGP"/>
                             <constraint firstItem="zHu-gi-NMi" firstAttribute="leading" secondItem="IWD-s7-rDf" secondAttribute="leading" constant="20" id="MPU-bH-NFZ"/>
+                            <constraint firstItem="wjd-V0-gHe" firstAttribute="top" secondItem="IWD-s7-rDf" secondAttribute="top" id="V9V-Tx-z7c"/>
                             <constraint firstItem="pr6-7s-kZW" firstAttribute="centerY" secondItem="IWD-s7-rDf" secondAttribute="centerY" constant="-150" id="ha0-ev-pQj"/>
                             <constraint firstItem="SAt-Qy-664" firstAttribute="top" secondItem="zHu-gi-NMi" secondAttribute="bottom" constant="40" id="nae-Vs-z8D"/>
                             <constraint firstItem="zHu-gi-NMi" firstAttribute="centerY" secondItem="IWD-s7-rDf" secondAttribute="centerY" id="qRI-LM-E4k"/>
+                            <constraint firstAttribute="bottom" secondItem="wjd-V0-gHe" secondAttribute="bottom" id="rA1-7s-imZ"/>
+                            <constraint firstItem="wjd-V0-gHe" firstAttribute="leading" secondItem="IWD-s7-rDf" secondAttribute="leading" id="tTP-wc-owQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RXH-Wo-2Cu"/>
                     <connections>
                         <outlet property="addressTextField" destination="zHu-gi-NMi" id="N1t-MO-twl"/>
+                        <outlet property="busyView" destination="wjd-V0-gHe" id="1bx-js-gBd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iRw-Xi-9Xb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124" y="168"/>
+            <point key="canvasLocation" x="124" y="167.76611694152925"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--ViewerViewController-->
         <scene sceneID="i7e-du-8kT">
             <objects>
-                <viewControllerPlaceholder id="Y2Q-kd-9un" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="ViewerViewController" id="Y2Q-kd-9un" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8g-NL-5NA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="722" y="167"/>
