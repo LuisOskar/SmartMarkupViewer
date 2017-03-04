@@ -8,11 +8,15 @@
 
 import UIKit
 
-class ViewerViewController: UIViewController {
+final class ViewerViewController: UIViewController {
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            self.tableView?.register(StyledStringTableViewCell.self, forCellReuseIdentifier: "StyledStringTableViewCell")
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,4 +40,19 @@ class ViewerViewController: UIViewController {
     }
     */
 
+}
+
+extension ViewerViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "StyledStringTableViewCell", for: indexPath) as?  StyledStringTableViewCell else {
+            return UITableViewCell()
+        }
+//        let section = Section() // FIXME: there's no data
+//        cell.configure(section: section)
+        return cell
+    }
 }

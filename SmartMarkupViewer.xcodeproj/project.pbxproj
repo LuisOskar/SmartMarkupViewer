@@ -13,6 +13,7 @@
 		56D9A32E1E6A889900512198 /* StyledString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9A32B1E6A889900512198 /* StyledString.swift */; };
 		56D9A3301E6A88A000512198 /* StyledStringViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9A32F1E6A88A000512198 /* StyledStringViewModel.swift */; };
 		56D9A3331E6A925F00512198 /* String+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9A3321E6A925F00512198 /* String+Range.swift */; };
+		56D9A3351E6AA18A00512198 /* StyledStringTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9A3341E6AA18A00512198 /* StyledStringTableViewCell.swift */; };
 		6E4539F9EE2EA5BAD486D727 /* Pods_SmartMarkupViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1485C3144961C291B7A9C88D /* Pods_SmartMarkupViewer.framework */; };
 		B29075841E6AA08B008C2497 /* DownloadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29075831E6AA08B008C2497 /* DownloadViewModel.swift */; };
 		B29075881E6AA0B5008C2497 /* Download.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29075861E6AA0B5008C2497 /* Download.storyboard */; };
@@ -39,6 +40,7 @@
 		56D9A32B1E6A889900512198 /* StyledString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyledString.swift; path = Models/StyledString.swift; sourceTree = "<group>"; };
 		56D9A32F1E6A88A000512198 /* StyledStringViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyledStringViewModel.swift; path = ViewModels/StyledStringViewModel.swift; sourceTree = "<group>"; };
 		56D9A3321E6A925F00512198 /* String+Range.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Range.swift"; path = "Helpers/String+Range.swift"; sourceTree = "<group>"; };
+		56D9A3341E6AA18A00512198 /* StyledStringTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyledStringTableViewCell.swift; path = Views/StyledStringTableViewCell.swift; sourceTree = "<group>"; };
 		B29075831E6AA08B008C2497 /* DownloadViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadViewModel.swift; path = ViewModels/DownloadViewModel.swift; sourceTree = "<group>"; };
 		B29075871E6AA0B5008C2497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Download.storyboard; sourceTree = "<group>"; };
 		B29075891E6AA0CB008C2497 /* DownloadController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadController.swift; path = Controller/DownloadController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				56D9A3211E6A7FAE00512198 /* StyledStringView.swift */,
+				56D9A3341E6AA18A00512198 /* StyledStringTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				F53EB1DB1E6A620800622054 /* ViewController.swift in Sources */,
 				B290758A1E6AA0CB008C2497 /* DownloadController.swift in Sources */,
 				F52CA5B81E6A8B0C00E455DE /* DataMockup.swift in Sources */,
+				56D9A3351E6AA18A00512198 /* StyledStringTableViewCell.swift in Sources */,
 				56D9A3331E6A925F00512198 /* String+Range.swift in Sources */,
 				56D9A3221E6A7FAE00512198 /* StyledStringView.swift in Sources */,
 				56D9A3301E6A88A000512198 /* StyledStringViewModel.swift in Sources */,
