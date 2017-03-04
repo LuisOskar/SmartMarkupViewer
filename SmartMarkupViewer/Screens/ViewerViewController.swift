@@ -10,6 +10,10 @@ import UIKit
 
 class ViewerViewController: UIViewController {
     
+    
+    var documentToShow : Document?
+    
+    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     @IBOutlet weak var tableView: UITableView!
