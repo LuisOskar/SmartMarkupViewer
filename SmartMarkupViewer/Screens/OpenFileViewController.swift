@@ -48,6 +48,8 @@ class OpenFileViewController: UIViewController {
         
         busyView.isHidden = false
         
+        print("Downloading: \(addressTextField.text)")
+        
         viewModel.download(link: addressTextField.text ?? "", callback: { error in
             
             DispatchQueue.main.async {
@@ -102,64 +104,18 @@ class OpenFileViewController: UIViewController {
         switch sender.tag {
         case 1:
             //
-            addressTextField.text = ""
+            addressTextField.text = "Wrong Address"
             break
         case 2:
             //
-            addressTextField.text = ""
+            addressTextField.text = "https://github.com/ReactiveX/RxSwift"
             break
         default:
             // default swift address
-            addressTextField.text = "https://raw.githubusercontent.com/1024jp/MarkupParser/master/README.md"
+            addressTextField.text = "https://github.com/apple/swift/blob/master/README.md"
             
         }
         
         
     }
-    
-    
-    
-    
-    // MARK: - Navigation
-    
-    
-//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-//        
-//        
-//        if identifier == "ViewrViewControllerSegue"
-//        {
-//            viewModel.download(link: addressTextField.text ?? "", callback: { error in
-//                guard error == nil else { return }
-//                
-//            })
-//        }
-//        
-//        return true
-//    }
-//    
-//    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        // Get the new view controller using segue.destinationViewController.
-//        // Pass the selected object to the new view controller.
-//        
-//        guard let addressString = addressTextField.text, !addressString.isEmpty else {
-//            
-//            let alert = UIAlertController(title: "Empty Address", message: "Please write a vaild URL", preferredStyle: .alert)
-//            
-//            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-//            
-//            self.show(alert, sender: self)
-//            
-//            return
-//        }
-//
-//
-//        
-//        
-//        if let viewerVC = segue.destination as? ViewerViewController {
-//            
-//            
-//            
-//        }
-//    }
 }
